@@ -1,0 +1,25 @@
+.nav{
+	width: 7.5rem;
+	height: .9rem;
+	background: #fff;
+	border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    top: 0px;
+    /*left: 50%;
+    margin-left: -3.75rem;*/
+    z-index: 1000000;
+    /*margin: 0 auto;*/
+}
+.navBack{
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+.navTitle{
+    width: 6.4rem;
+    line-height: .9rem;
+    font-size: 0.36rem;
+    color: #3c3c3c;
+    text-align: center;
+}

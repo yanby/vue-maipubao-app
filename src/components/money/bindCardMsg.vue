@@ -1,0 +1,64 @@
+<template>
+  <div class="bindCardMsg">
+    <div class="nav clearfix">
+      <img class="navBack fl" src="../../../static/images/common/back.png" alt="" @click="navBack()">
+      <h2 class="navTitle fl">绑定银行卡说明</h2>
+    </div>
+    <div class="contentMsg">
+      <p v-html="msg"></p>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "",
+    data() {
+      return {
+        msg: ""
+      }
+    },
+    mounted(){
+      if(getUrlId("move")){
+        $(".nav").hide();
+        $(".contentMsg").css({margin:0})
+      }
+      this.init()
+    },
+    methods: {
+      navBack() {
+        this.$router.go(-1)
+      },
+      init(){
+        var that = this;
+        this.$http({
+          url: this.changeData() + "/member/getAgreement",
+          method: 'post',
+          params: {
+            agreementType: 4,//4绑定银行卡说明
+          }
+        }).then(res => {
+          console.log(res)
+          if(res.data.code == "101"){
+            this.msg = res.data.data.content;
+          }
+        }).catch(err => {
+          console.log(err)
+        });
+      },
+    }
+  }
+</script>
+
+<style lang="scss" type="text/scss" scoped>
+  @import "../../../static/css/nav.css";
+  .bindCardMsg{
+    width: 7.5rem;
+    height: 100vh;
+    background: #fff;
+    margin: .9rem auto 0;
+    .contentMsg{
+      margin-top: .9rem;
+    }
+  }
+</style>

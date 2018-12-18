@@ -1,0 +1,142 @@
+.detail{
+  width: 7.5rem;
+  //overflow: scroll;
+  background: #fff;
+  ul{
+    width: 7.5rem;
+    overflow: hidden;
+    li{
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      display: flex;
+      margin: .3rem;
+      border-bottom: 0.01rem solid #eaeaea;
+      &.cur{
+        h4{
+          color: #aaa!important;
+        }
+      }
+      .select{
+        width:0.45rem;
+        height: 1.62rem;
+        margin-right: .2rem;
+        position: relative;
+        .check{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -.2rem;
+          margin-top: -.2rem;
+          width: .45rem;
+          height: .45rem;
+          background: url("../../../static/images/common/select.png") no-repeat #fff;
+          background-size: .4rem .4rem;
+          &.cur{
+            background-image: url("../../../static/images/common/select-bg.png");
+          }
+        }
+        input{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -.2rem;
+          margin-top: -.2rem;
+          width: .4rem;
+          height: .4rem;
+          opacity: 0;
+        }
+      }
+      .wrap{
+        display: flex;
+        height: 2.1rem;
+        padding-bottom: .3rem;
+        position: relative;
+
+        .img{
+          width: 2.78rem;
+          margin-right:.3rem;
+          position: relative;
+          img{
+            width: 2.78rem;
+            height: 2.1rem;
+          }
+          .zhiding{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0.74rem;
+            height: 0.34rem;
+            background-image: url("../../../static/images/common/zhiding.png");
+            -webkit-background-size: .74rem .34rem;
+            background-size: .74rem .34rem;
+          }
+        }
+        .msg{
+          width: 4.74rem;
+          position: relative;
+          .look{
+            position: absolute;
+            width: 1rem;
+            right: .7rem;
+            top: .45rem;
+            font-size: .28rem;
+            color:#aaa;
+            span{
+              display: inline-block;
+              width: .28rem;
+              height: .18rem;
+              margin-right: .1rem;
+              background: url("../../../static/images/common/look.png");
+              -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+            }
+          }
+          .price{
+            font-size: .28rem;
+            margin-bottom: .1rem;
+            span{
+              margin-left: .05rem;
+              font-size: .28rem;
+              font-weight: normal;
+              color: #e8584f;
+            }
+          }
+          h4{
+            width: 3.8rem;
+            height: .32rem;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            font-size: .32rem;
+            color: #333;
+            font-weight:bold;
+            margin-bottom: 0.15rem;
+          }
+          p{
+            font-size: .28rem;
+            height: .24rem;
+            color: #aaa;
+            margin-bottom: 0.2rem;
+          }
+          .tags{
+            span{
+              display: inline-block;
+              padding: 0rem .08rem;
+              line-height: .36rem;
+              text-align: center;
+              background: #E5F1FF;
+              color: #64aaff;
+              font-size: .23rem;
+              margin-right: .12rem;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .noInner{
+    text-align: center;
+    font-size: .26rem;
+    color: #898989;
+  }
+}

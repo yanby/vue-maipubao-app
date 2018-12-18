@@ -1,0 +1,77 @@
+.nav{
+  width: 7.5rem;
+  height: .9rem;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.navBack{
+  width: 0.36rem;
+  height: 0.36rem;
+  margin-top: .3rem;
+  margin-left: .3rem;
+}
+.navTitle{
+  width: 6.4rem;
+  line-height: .9rem;
+  font-size: 0.34rem;
+  font-weight: bold;
+  color: #3c3c3c;
+  text-align: center;
+}
+
+.nav .txt{
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+
+.nav .txt a{
+  font-size: .26rem;
+}
+
+
+.contentMsg{
+  padding: .3rem;
+  background: #fff;
+}
+.contentMsg p{
+  text-indent: 2em;
+  line-height: .5rem;
+  font-size: .28rem;
+  text-align: justify;
+}
+
+
+/*底部弹窗*/
+.bottomModel{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 100;
+}
+.bottomModel .wrap{
+  position: absolute;
+  bottom: 0rem;
+}
+.bottomModel ul{
+  width: 7.5rem;
+  max-height: 4rem;
+  overflow: auto;
+}
+.bottomModel ul li,.bottomModel .cancle{
+  width: 7.5rem;
+  height: .9rem;
+  line-height: .9rem;
+  background: #fff;
+  text-align: center;
+  border-bottom: 0.01rem solid #eaeaea;
+}
+.bottomModel .cancle{
+  margin-top: .1rem;
+}
